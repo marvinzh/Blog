@@ -351,6 +351,13 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -569,7 +576,7 @@
   
 
 
-  <script src="/js/next-boot.js?v=7.1.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="/js/next-boot.js?v=7.1.1"></script>
 
 
   
@@ -579,6 +586,29 @@
   
 
   
+  
+  <script id="dsq-count-scr" src="https://marvinzh.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/tags/index.html";
+    this.page.identifier = "tags/index.html";
+    this.page.title = 'tags';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://marvinzh.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
 
 
   
